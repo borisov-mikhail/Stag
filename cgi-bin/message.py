@@ -21,4 +21,6 @@ print("Content-type: text/html")
 
 value = form.getfirst("user_number", 0)
 
-print("\n<h1>Value: {}</h1>".format(get_dividers(value)))
+list_1 = get_dividers(value)
+
+print("\n<h1>Dividers: {}</h1>".format(list_1[1]))

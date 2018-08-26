@@ -1,28 +1,20 @@
-#!/usr/bin/env python3
-
-import cgi
 import math
 
-form = cgi.FieldStorage()
 
-
-def get_dividers(number):
+def get_dividers(user_number):
     dividers = []
-    cur_num = number
     divider = 2
-    while cur_num != 1 and divider <= math.ceil(math.sqrt(number)):
-        if cur_num % divider == 0:
-
+    while user_number != 1:
+        if user_number % divider == 0:
             dividers.append(divider)
-
-            cur_num /= divider
+            user_number /= divider
         else:
             divider += 1
-    return sorted(dividers)
+    return dividers
 
 
-print("Content-type: text/html")
-
-value = form.getfirst("user_number", 0)
-
-print("\n<h1>Value: {}</h1>".format(get_dividers(value)))
+print(get_dividers(125))
+print(get_dividers(51))
+print(get_dividers(5165))
+print(get_dividers(1001))
+print(get_dividers(66))

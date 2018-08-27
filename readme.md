@@ -1,11 +1,7 @@
-ѕроект на стажировку.
+# Multiplier application.
 
-Ёто клиент-серверное приложение, раскладывающее любое целое число на его простые множители.
+## Usage
 
- ак запускать:
-
-1) выполнить файл server.py
-
-2) в браузере в адресной строке набрать localhost:8000
-
-3) ввести необходимое дл€ разложени€ число и нажать на кнопку "–азложить"
+1. Clone repository: `git clone https://github.com/borisov-mikhail/Stag` 
+2. Run server: `python server.py`
+3. Open browser and copy UPL `localhost:8080`

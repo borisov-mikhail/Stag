@@ -1,4 +1,4 @@
-# Multiplier application.
+#Multiplier application.
 
 ## Usage
 
